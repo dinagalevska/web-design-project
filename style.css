@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.9em;
+
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.dropdown:hover .dropdown-menu
+{
+    display: block;
+}
+.dropdown .dropdown-menu
+{
+    display: none;
+}
+
+
+
+h1
+{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+a
+{
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-weight: 700;
+}
+
+section
+{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    z-index: 2;
+    position: relative;
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(245,240,205,0.8),rgba(215,250,250,0.6));
+    z-index: -1;
+}
+.bg-cover
+{
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hero-section
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-intro
+{
+    margin-bottom: 40px;
+
+}
+.section-intro .divider
+{
+    height: 4px;
+    width: 250px;
+    background: linear-gradient(rgba(188, 243, 205, 0.82), rgba(217, 248, 226, 0.97));
+    margin:15px auto;
+}
+
+img
+{
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+}
+.education .divider
+{
+    height: 4px;
+    width: 100px;
+    margin:15px auto;
+    background: linear-gradient(rgba(188, 243, 205, 0.82), rgba(217, 248, 226, 0.97)) center;
+
+}
+.education .education_img{
+    position: relative;
+    width: 100%;
+}
+p
+{
+    font-family: 'Pristina',sans-serif;
+}
+.back-to-top
+{
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+    background: transparent none;
+    scroll-behavior: smooth;
+
+}
+a:after, a:before
+{
+    scroll-behavior: smooth;
+}
+
+.navbar .navbar-nav .nav-item
+{
+    position: relative;
+}
+.navbar .navbar-nav .nav-item::after
+{
+    position: absolute;
+    content: '';
+    background-color: black;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: all .5s;
+}
+.navbar .navbar-nav .nav-item:hover::after
+{
+    width: 100%;
+}
+@media screen and (min-width: 992px) {
+    .navbar{
+        padding:0;
+    }
+    .navbar .navbar-nav .nav-link
+    {padding: 1em 0;}
+    .navbar .navbar-nav .nav-item
+    {
+        margin: 0 1em;}
+}
+#strucni_tela .divider
+{
+    height: 4px;
+    width: 250px;
+    margin:15px auto;
+    background: linear-gradient(rgba(188, 243, 205, 0.82), rgba(217, 248, 226, 0.97)) center;
+
+}
+#informacii .divider
+{
+    height: 4px;
+    width: 250px;
+    margin:15px auto;
+    background: linear-gradient(rgba(188, 243, 205, 0.82), rgba(217, 248, 226, 0.97)) center;
+}
+.review .person
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+.review
+{
+    box-shadow: 0 12px 12px rgba(0,0,0,0.1);
+}
+.btn
+{
+    padding: 14px 22px;
+}
+.btn-main
+{
+    background: linear-gradient(rgb(188, 243, 215), rgb(217, 248, 226)) center;
+    border-radius: 100px;
+    border: none;
+    font-weight: 550;
+
+}
+.btn:hover
+{
+    transform: scale(1.2);
+    transition: .3s;
+}
+#second_page .divider
+{
+    height: 4px;
+    width: 250px;
+    margin:15px auto;
+    background: linear-gradient(rgba(188, 243, 205, 0.82), rgba(217, 248, 226, 0.97)) center;
+}
+#kontakt .divider
+{
+    height: 4px;
+    width: 250px;
+    margin:15px auto;
+    background: linear-gradient(rgba(188, 243, 205, 0.82), rgba(217, 248, 226, 0.97)) center;
+}
+.item img
+{
+    margin: auto;
+
+}
+.social
+{
+    display: flex;
+}
+.fab
+{
+    padding: 13px;
+    font-size: 23px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 2px;
+    border-radius: 50%;
+    align-items: center;
+}
+.fab:hover
+{
+    transform: scale(1.2);
+    transition: .3s;
+}
+#povazni_linkovi a:hover
+{
+    transform: scale(0.9);
+    transition: .3s;
+    opacity: 0.6;
+}
+.fas:hover
+{
+    transform: scale(1.2);
+    transition: .3s;
+}
+address a:hover
+{
+    transform: scale(1.2);
+    transition: .3s;
+    font-size: 17px;
+}
+.navbar a:hover
+{
+    transition: .3s;
+    font-size: 15px;
+}
